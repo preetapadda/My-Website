@@ -1,0 +1,55 @@
+body { 
+    background-image: url('C:/Users/alexa_000/Desktop/Code First/My-Website/brooklyn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header {
+  text-align: center;
+  /*how do i make the font bigger?*/
+  font-size: 80px;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+h1{
+  font-size: 80px;
+}
+
+.column {
+    padding-top: 2em;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 200px;
+    margin:50px;
+    float: center;
+}
+
+#column1 {
+    background: grey;
+}
+
+#column2 {
+    background: grey;
+}
+
+#column3 {
+    background: grey;
+}
+
+#column4 {
+    background: grey;
+}
+
+footer {
+    margin: 50px;
+    color: white;
+}

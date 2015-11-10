@@ -1,0 +1,69 @@
+.OutlineText {
+    font-size: 64px;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,  
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000; /* Terminate with a semi-colon */
+}
+
+header {
+  text-align: center;
+  background: url('http://www.bwvision.com/wp-content/uploads/2014/06/Skyline-6.jpg');
+  background-size: cover;
+  height: 18%;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+a {
+  color: white;
+}
+h1 {
+  font-size: 70px;
+  padding: 100px 50px 100px 50px
+}
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  /*display: inline;*/
+  padding: 10px 10px 10px 10px;
+  list-style-type: none;
+}
+
+button {
+  padding: 10px 10px 10px 10px;
+} 
+
+
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}

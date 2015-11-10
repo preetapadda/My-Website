@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Demo Activity</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- JQuery UI -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+  <style>
+    header {
+      text-align: center;
+      background: url('http://www.bwvision.com/wp-content/uploads/2014/06/Skyline-6.jpg');
+      background-size: cover;
+      height: 18%;
+      color: white;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      padding: 100px 50px 100px 50px
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      /*display: inline;*/
+      padding: 10px 10px 10px 10px;
+      list-style-type: none;
+    }
+
+    button {
+    padding: 10px 10px 10px 10px;
+    } 
+
+
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+
+  <style type="text/css">
+.OutlineText {
+    font-size: 64px;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,  
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000; /* Terminate with a semi-colon */
+}
+</style>
+
+<script>
+$(function(){
+
+        $("#accordion").accordion({ header: "h3" });
+
+
+        //this will open 1st accordian.
+        $('#openfirst').click(function(){
+                  $(".accordion").accordion({active:0});
+            });
+
+        //this will open 2nd accordian.
+         $('#opensecond').click(function(){
+                  $(".accordion").accordion({active:1});
+            });
+
+        //this will open 3rd accordian.
+            $('#openthird').click(function(){
+                  $(".accordion").accordion({active:2});
+            });
+
+
+        //this will open 4th accordian.
+       $('#openfourth').click(function(){
+                  $(".accordion").accordion({active:3});
+            });
+
+        });
+</script>
+
+
+</head>
+<body>
+              <audio src="http://cache.glujar.com/2000_3225_77+3411_5472_6/one-republic-i-lived.mp3" controls>  
+<!-- add in "autoplay" after controls for final webpage   -->
+
+
+                <p>Audio is not supported by your browser</p>
+            </audio>
+  <header>
+       <h1 class="OutlineText">Welcome to New York</h1>
+    <ul>
+      <li><a href="#">Where will you go?</a></li>
+      <li><a href="#">Take our quiz below to help you decide!</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>What interests you?</h2>
+            <button type="button" class="btn btn-default" id="openfirst">Entertainment</button>
+            <button type="button" class="btn btn-default" id="opensecond">Food</button>
+            <button type="button" class="btn btn-default" id="openthird">Sightseeing</button>
+            <button type="button" class="btn btn-default" id="openfourth">Bars</button>
+  </article>
+  <article>
+    <div id="accordion" class="accordion">
+                <div>
+                <h3 href="#">Entertainment</h3>
+                <ul>
+                  <li>Theatre</li>
+                  <li>Sports</li>
+                  <li>Music</li>
+                  <li>Comedy</li>
+                </ul>
+                </div>
+
+                <h3 href="#">Food</h3>
+                <div>
+                    <p>
+                    Please select a cuisine
+                    </p>
+                    <ul>
+                  <li>Italian</li>
+                  <li>Indian</li>
+                  <li>Chinese</li>
+                  <li>American</li>
+                  <li>Dessert</li>
+                  <li>Bars</li>
+                </ul>
+                </div>
+
+                <h3 href="#">Sightseeing</h3>
+                <div>
+                  <p>  WE NEED TO PUT INFO NEXT TO EACH (LOCATION + PRICE) as well as an image </p>
+                    <ul>
+                  <li>Statue of Liberty</li>
+                  <li>Rockefeller</li>
+                  <li>Empire State</li>
+                  <li>Crysler</li>
+                  <li>Dessert</li>
+                </ul>
+                   </div>
+
+                <h3 href="#">Bars</h3>
+                <div>
+                    <p>
+                    Add in some bars
+                    </p>
+                </div>
+            </div>
+  </article>
+
+  // <script>
+  //   $("button").on("click", function() {
+  //     alert("Clicked!");
+  //   });
+  // </script>
+
+  <script> 
+  $("#accordion").accordion({ header: "h3", collapsible: true, active: false });
+  </script>
+
+</body>
